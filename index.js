@@ -7,7 +7,7 @@ function toCamelCase() {
   const value = input.value;
   const lower = value.charAt(0).toLowerCase() + value.slice(1);
   const val = lower.replace(/\s/g, "-");
-  const x = val.match(/[-_]/) ? val.split(/[-_]/g) : val;
+  const x = val.match(/[^\w\s]/) ? val.split(/[^\w\s]/g) : val;
   const newEl = document.createElement("div");
   let result;
   if (x === " " || x === "" || x === null) {
