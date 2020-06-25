@@ -5,7 +5,8 @@ const display = document.getElementById("display");
 
 function toCamelCase() {
   const value = input.value;
-  const val = value.replace(/\s/g, "");
+  const lower = value.charAt(0).toLowerCase() + value.slice(1);
+  const val = lower.replace(/\s/g, "-");
   const x = val.match(/[-_]/) ? val.split(/[-_]/g) : val;
   const newEl = document.createElement("div");
   let result;

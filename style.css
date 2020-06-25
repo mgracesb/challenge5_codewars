@@ -75,6 +75,7 @@
 }
 
 input {
+  box-shadow: inset 1px 2px 3px 1px rgb(156, 156, 156);
   padding-left: 2%;
   margin-right: 5%;
   width: 40%;
@@ -99,7 +100,6 @@ h2 {
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 
 .display {
